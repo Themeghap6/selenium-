@@ -1,0 +1,9 @@
+package core.java;
+
+public class PrimeNumber4 {
+	public static void main(String[] args) {
+		int n;			//variable
+		System.out.println("Enter Number : ");
+	}
+
+}

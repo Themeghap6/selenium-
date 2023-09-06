@@ -1,0 +1,17 @@
+package core.java;
+
+import java.util.Scanner;
+
+public class Arraycopy22 {
+		public static void main(String[] args) {
+			Scanner Sc = new Scanner(System.in);
+			
+			//Take the array size from the user
+			System.out.println("Enter the size of array : ");
+			int size = Sc.nextInt();
+			
+			 // Initialize the array's &  size using user input
+			int[] arr= new int[size];
+			
+		}
+}

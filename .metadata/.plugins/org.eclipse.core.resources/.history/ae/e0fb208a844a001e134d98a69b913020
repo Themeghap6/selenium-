@@ -1,0 +1,46 @@
+package core.java;
+
+
+	// Custom exception class
+	class InsufficientBalanceException extends Exception {
+	    public InsufficientBalanceException(String message) {
+	        super(message);
+	    }
+	}
+
+	// Account class
+	class Account {
+	    private double balance;
+
+	    public Account(double initialBalance) {
+	        this.balance = initialBalance;
+	    }
+
+	    public void withdraw(double amount) throws InsufficientBalanceException {
+	        if (amount > balance) {
+	            double requiredBalance = amount - balance;
+	            throw new InsufficientBalanceException("Sorry, insufficient balance, you need more " + requiredBalance + " Rs. to perform this transaction.");
+	        } else {
+	            balance -= amount;
+	            System.out.println("Withdrawal successful. Remaining balance: " + balance);
+	        }
+	    }
+	}
+
+	// Main class
+	public class CustomExceptionExample27 {
+	    public static void main(String[] args) {
+	        double initialBalance = 2000;
+	        Account account = new Account(initialBalance);
+
+	        try {
+	            System.out.print("Account balance is: " + initialBalance + "\nEnter withdraw amount: 2500 ");
+	            double withdrawAmount = 2500; // You can input this value dynamically using a Scanner
+	            account.withdraw(withdrawAmount);
+	        } catch (InsufficientBalanceException e) {
+	            System.out.println(e.getMessage());
+	        }
+	    }
+	}
+
+

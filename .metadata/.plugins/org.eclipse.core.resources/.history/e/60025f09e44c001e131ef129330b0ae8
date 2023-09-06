@@ -1,0 +1,66 @@
+package com.selenium_learing;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+// to check automatic browser ulr check
+
+public class Basictest {
+	public static void main(String[] args) throws InterruptedException {
+		String url ="https://facebook.com/";	//check to this application
+		System.setProperty("webdrive.chrome.driver","C:\\Users\\Megha\\chromedriver_win32.zip");   // driver name search in google if you dont know
+		WebDriver driver = new ChromeDriver();		//open driver in whatever in webdriver
+		driver.manage().window().maximize();
+		driver.get(url);		//test url in drive get method to search our application
+	
+		
+// TO ADD Basic details in create new account
+		WebElement ele = driver.findElement(By.linkText("Create new account"));
+		ele.click();
+        //*[@id="email"]
+		Thread.sleep(3000);
+		driver.findElement(By.name("firstname")).sendKeys("java");
+		driver.findElement(By.name("lastname")).sendKeys("selenium");
+		driver.findElement(By.name("reg_email__")).sendKeys("megha22061996@gmail.com");
+		driver.findElement(By.name("reg_email_confirmation__")).sendKeys("megha22061996@gmail.com");
+		driver.findElement(By.name("password_step_input")).sendKeys("Kunj@8866");
+		
+		             // to check all login combimision data //
+//		String expectedResult="facebook.com";
+//		String actual = driver.getTitle(); 		
+//		System.out.println(actual);
+//		if(expectedResult.equals(actual)) {
+//			System.out.println("pass");
+//		}
+//		else {
+//			System.out.println("fail");
+//		}
+		
+		
+		
+//		WebElement email = driver.findElement(By.id("email"));
+//	    email.sendKeys("selenium@gmail.com");
+//		WebElement password = driver.findElement(By.id("pass"));
+//		password.sendKeys("pass");
+//		
+				
+				
+				
+// TO check in edge drive
+			//	System.setProperty("webdriver. edge. driver","C:\\Program Files (x86)\\Microsoft\\Edge\\Application" );
+			//	WebDriver driver = new EdgeDriver();
+			//	driver.manage().window().maximize();
+			//	driver.get(url);
+		
+//To check in firefox drive
+//		    System.setProperty(" webdriver.gecko.driver ","C:\\Users\\Megha\\geckodriver-v0.33.0-win64.zip" );
+//			WebDriver driver = new FirefoxDriver();
+//			driver.manage().window().maximize();
+//			driver.get(url);
+	}
+
+}

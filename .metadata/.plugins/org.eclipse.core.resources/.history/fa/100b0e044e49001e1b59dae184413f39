@@ -1,0 +1,30 @@
+package core.java;
+
+ abstract class  parent{
+	public parent (){
+		System.out.println("I'm constructor of parent ");
+	}
+	public void sayhello() {			// void method
+		System.out.println("Hello ");	
+	}
+	abstract parent void greet()	;
+} 		
+class child1 extends parent{
+		@Override
+		public void greet() {
+			System.out.println("good morning");
+			
+		}
+	}
+ abstract  class child2 extends parent{
+	public void MK() {
+		System.out.println("i m good");
+		
+	}
+}
+
+public class AbstractClass {
+		public static void main(String[] args) {
+			
+		}
+}

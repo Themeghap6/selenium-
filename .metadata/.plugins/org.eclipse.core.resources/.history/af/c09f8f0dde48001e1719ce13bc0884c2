@@ -1,0 +1,17 @@
+package core.java;
+
+class m1{
+	public m1(){			// m1 constructor
+		System.out.println("this is m1 constructor ");
+		
+	}
+}
+
+
+
+
+public class AbstractClass {
+		public static void main(String[] args) {
+			
+		}
+}

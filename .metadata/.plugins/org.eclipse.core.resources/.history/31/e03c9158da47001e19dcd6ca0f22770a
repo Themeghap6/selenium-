@@ -1,0 +1,26 @@
+package core.java;
+
+import java.util.Scanner;
+
+public class ArrayReverse23 {
+		public static void main(String[] args) {
+				Scanner Sc= new Scanner(System.in);
+				int i=Sc.nextInt();
+				int a[]= new int[5];
+				
+				System.out.println("Enter elemets in array : ");
+				
+					a[i]=Sc.nextInt();
+				for(int i1=0;i1<5;i1++) {
+					System.out.println(a[i1]+" ");
+				}
+				// to reverse elements
+				System.out.println("array reverse elemnts");
+				for(int i1=5-1;i1>=0;i1--) {
+					System.out.println(a[i1]+" ");
+				}
+				
+				
+				
+}	
+}

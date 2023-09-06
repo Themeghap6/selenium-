@@ -1,0 +1,13 @@
+package core.java;
+
+class Progamming{
+	public abstract void  developer(); 
+		
+	}
+}
+
+public class AbstractClass {
+		public static void main(String[] args) {
+			
+		}
+}

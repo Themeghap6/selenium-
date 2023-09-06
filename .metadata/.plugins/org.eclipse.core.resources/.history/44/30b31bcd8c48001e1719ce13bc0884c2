@@ -1,0 +1,17 @@
+package core.java;
+
+import java.util.Scanner;
+
+public class Arraylargestvalue24 {
+	 public static void main(String[] args) {
+		Scanner Sc = new Scanner(System.in);
+		int i[]= new int[5];
+		
+		System.out.println("Enter Array elemnets:");
+		for(int i=0;i<5;i++) {
+			a[i]=Sc.nextInt();
+		}
+	}
+}
+	
+

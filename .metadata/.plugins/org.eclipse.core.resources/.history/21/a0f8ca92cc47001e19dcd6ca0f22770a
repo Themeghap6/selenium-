@@ -1,0 +1,19 @@
+package core.java;
+
+import java.util.Scanner;
+
+public class Arraycopy22 {
+		public static void main(String[] args) {
+			Scanner SC= new Scanner(System.in);
+			System.out.println("Enter the size of  in first array : ");
+			int size= SC.nextInt();
+			int a[]= new int[size];
+			
+			for(int i=0;i<size;i++) {
+						// to insert array value
+				System.out.println(a[i]+"  " );
+			}
+					
+			
+}
+}

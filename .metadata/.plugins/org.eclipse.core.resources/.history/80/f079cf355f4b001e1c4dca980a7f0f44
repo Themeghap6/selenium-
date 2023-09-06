@@ -1,0 +1,35 @@
+package com.selenium_learing;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+// to check automatic browser ulr check
+public class Basictest {
+	public static void main(String[] args) {
+		String url ="https://facebook.com/";	//check to this application
+		System.setProperty("webdrive.chrome.driver","C:\\Users\\Megha\\chromedriver_win32.zip");   // driver name search in google if you dont know
+		WebDriver driver = new ChromeDriver();		//open driver in whatever in webdriver
+		driver.manage().window().maximize();
+		driver.get(url);		//test url in drive get method to search our application
+	
+		
+		WebElement email = driver.findElement(By.id("email"));
+	    email.sendKeys("selenium@gmail.com");
+		WebElement password = driver.findElement(By.id("pass"));
+		password.sendKeys("pass");
+		//WebElement ele= driver.findElement(By.linkText("create new account 	))
+	
+				
+				
+				
+// TO check in edge drive
+			//	System.setProperty("webdriver. edge. driver","C:\\Program Files (x86)\\Microsoft\\Edge\\Application" );
+			//	WebDriver driver = new EdgeDriver();
+			//	driver.manage().window().maximize();
+			//	driver.get(url);
+	}
+
+}

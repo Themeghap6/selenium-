@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;core.java.CustomException27.java&apos; to &apos;CustomExceptionExample27.java&apos;&#x0D;&#x0A;- Original project: &apos;core.java&apos;&#x0D;&#x0A;- Original element: &apos;core.java.CustomException27.java&apos;&#x0D;&#x0A;- Renamed element: &apos;core.java.CustomExceptionExample27.java&apos;" description="Rename compilation unit &apos;CustomException27.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;core.java{CustomException27.java" name="CustomExceptionExample27.java" references="false" stamp="1693763973967" version="1.0"/>
+</session>
